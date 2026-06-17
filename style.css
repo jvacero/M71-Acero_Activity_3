@@ -1,0 +1,23 @@
+
+.civStat {
+    color: black;
+}
+
+.forminput {
+    margin: 5% 30% 5% 30%;
+    display: grid;
+    align-content: center;
+    color: transparent;
+}
+
+input {
+
+    text-align: center;
+    border-radius: 5%;
+    border-color: transparent;  
+    padding: 1%;
+}
+
+input::selection {
+    border-color: aqua;
+}
