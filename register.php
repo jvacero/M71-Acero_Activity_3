@@ -24,6 +24,10 @@ Student Information Form - Acero
 	<input class="radioBtn" id="civStat" type="radio" name="status">
 	<input placeholder="Nationality" type="text" name="ntnLity">
 	</div>
+	<div>
+	<button class="submitBtn">test</button>
+	</div>
 </form>
+
 </body>
 </html>

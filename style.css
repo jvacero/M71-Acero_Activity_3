@@ -3,7 +3,8 @@ body {
 }
 
 .forminput {
-    margin: 5% 30% 0% 30%;
+    z-index: 2;
+    margin: 5% 30% 0% 33%;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,10 +16,18 @@ body {
 input {
     margin-bottom: 5%;
     align-content: center;
-    text-align: center;
+    text-align: left;
+    text-indent: 5%;
     border-radius: 1vmax;
-    border-color: transparent; 
+    border-style:double;
+    border-color: rgb(173, 173, 173); 
     height: 24%;
+}
+
+input::placeholder {
+    opacity: 70%;
+    text-indent: 5%;
+    text-align: left;
 }
 
 input[type="date"] {
@@ -42,4 +51,16 @@ p:nth-child(1) {
 
 p.forminput {
     text-align: center;
+}
+
+.submitBtn {
+    z-index: -1;
+    margin-top: 14%;
+    margin-left: 35%;
+    align-content: bottom;
+    width: 29%;
+    padding-top: 1% ;
+    padding-bottom: 1%;
+    border-radius: 1vmax;
+    border-style: none;
 }
