@@ -8,6 +8,7 @@ Student Information Form - Acero
 </head>
 
 <body>
+	<p>Registration Form</p>
 <form class="forminput" action="input.php" method="POST">
 	Last Name: <input type="text" placeholder="Last Name" name="lastName">
 	Middle Name: <input type="text" placeholder="Middle Name" name="midName">
