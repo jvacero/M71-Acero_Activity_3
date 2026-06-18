@@ -1,27 +1,45 @@
-
-.civStat {
-    color: black;
+body {
+    align-content: center;
 }
 
 .forminput {
-    margin: 5% 30% 5% 30%;
-    display: grid;
+    margin: 5% 30% 0% 30%;
     align-content: center;
-    color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 35%;
 }
+
+
 
 input {
-
+    margin-bottom: 5%;
+    align-content: center;
     text-align: center;
-    border-radius: 5%;
-    border-color: transparent;  
-    padding: 1%;
+    border-radius: 1vmax;
+    border-color: transparent; 
+    height: 24%;
 }
 
-input::selection {
-    border-color: aqua;
+input[type="date"] {
+    display: block;
+    text-align: center;
+    width: 85%;
 }
 
-p {
-    
+.radioBtn {
+    margin: 10%;
+    align-content: left;
+}
+
+p:nth-child(1) {
+    text-align: left;
+    margin-left: 30% ;
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    font-size: 180%;
+}
+
+p.forminput {
+    text-align: center;
 }
