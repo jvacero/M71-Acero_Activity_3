@@ -13,14 +13,18 @@ body {
 
 
 
-input {
-    margin-bottom: 5%;
+input,
+input[type="date"] {
+    display: block;
+    width: 75%;
+    margin-bottom: 8%;
     align-content: center;
     text-align: left;
+    text-decoration-color: rgba(240, 248, 255, 0.363);
     text-indent: 5%;
     border-radius: 1vmax;
-    border-style:double;
-    border-color: rgb(173, 173, 173); 
+    border-style: double;
+    border-color: rgb(173, 173, 173);
     height: 24%;
 }
 
@@ -30,11 +34,6 @@ input::placeholder {
     text-align: left;
 }
 
-input[type="date"] {
-    display: block;
-    text-align: center;
-    width: 85%;
-}
 
 .radioBtn {
     margin: 10%;
@@ -43,7 +42,7 @@ input[type="date"] {
 
 p:nth-child(1) {
     text-align: left;
-    margin-left: 30% ;
+    margin-left: 30%;
     font-family: 'Noto Sans';
     font-weight: bold;
     font-size: 180%;
@@ -55,12 +54,29 @@ p.forminput {
 
 .submitBtn {
     z-index: -1;
-    margin-top: 14%;
-    margin-left: 35%;
     align-content: bottom;
-    width: 29%;
-    padding-top: 1% ;
-    padding-bottom: 1%;
+    width: 100%;
+    margin-top: 78%;
+    margin-left: 87%;
     border-radius: 1vmax;
     border-style: none;
+}
+
+@media (max-width: 768px) {
+    .forminput {
+        margin-left: 5%;
+        width: 90%;
+        min-width: unset;
+    }
+
+    p:nth-child(1) {
+        margin-left: 0;
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .submitBtn {
+        margin-left: 0;
+        width: 100%;
+    }
 }
