@@ -23,10 +23,10 @@ Student Information Form - Acero
 	<input type="text" placeholder="Religion" name="religion">
 	<input class="radioBtn" id="civStat" type="radio" name="status">
 	<input placeholder="Nationality" type="text" name="ntnLity">
-	</div>
-	<div>
-	<button class="submitBtn">test</button>
-	</div>
+</div>
+<div class="submitBtn">
+<button>test</button>
+</div>
 </form>
 
 </body>
