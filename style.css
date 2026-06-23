@@ -1,23 +1,31 @@
 body {
     align-content: center;
+    margin: 1%;
+    background-color: rgb(255, 255, 255);
 }
 
-.forminput {
-    z-index: 2;
-    margin: 5% 30% 0% 33%;
+header {
+    padding: 5px;
+}
+
+form {
+    margin: 0% 30% 0% 33%;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 35%;
+    background-color: rgb(116, 152, 231);
+    margin-left: 70vh;
+    padding: 20px 1px 195px 20px;
+    border-radius: 2vh;
 }
-
-
 
 input,
 input[type="date"] {
     display: block;
     width: 75%;
     margin-bottom: 8%;
+    margin-left: 5%;
     align-content: center;
     text-align: left;
     text-decoration-color: rgba(240, 248, 255, 0.363);
@@ -25,7 +33,7 @@ input[type="date"] {
     border-radius: 1vmax;
     border-style: double;
     border-color: rgb(173, 173, 173);
-    height: 24%;
+    height: 20%;
 }
 
 input::placeholder {
@@ -34,10 +42,32 @@ input::placeholder {
     text-align: left;
 }
 
+input[type="radio"] {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
 
 .radioBtn {
-    margin: 10%;
-    align-content: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(0, 0, 0, 0.553);
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.civstatus {
+    margin-left: 5%;
+}
+
+label {
+    font-size: 12px;
+    vertical-align: middle;
 }
 
 p:nth-child(1) {
@@ -48,25 +78,57 @@ p:nth-child(1) {
     font-size: 180%;
 }
 
-p.forminput {
-    text-align: center;
-}
-
 .submitBtn {
-    z-index: -1;
-    align-content: bottom;
-    width: 100%;
-    margin-top: 78%;
-    margin-left: 87%;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    width: 90%;
+    height: 15%;
+    margin-top: 15%;
+    margin-left: -50%;
+    margin-bottom: 15%;
+    padding: 2%;
     border-radius: 1vmax;
     border-style: none;
+    z-index: 1;
+}
+
+.submitBtn:hover {
+    color: aliceblue;
+    background-color: greenyellow;
+    border-inline-color: greenyellow;
+    border-inline-style: double;
+}
+
+@media (max-width: 1272px) {
+    form {
+        margin-left: 40vh;
+    }
 }
 
 @media (max-width: 768px) {
     .forminput {
+        padding-bottom: 4%;
         margin-left: 5%;
         width: 90%;
         min-width: unset;
+    }
+
+    input,
+    input[type="date"] {
+        padding: 3vh;
+        margin-bottom: 10%;
+        margin-top: 15%;
+    }
+
+    form {
+        display: block;
+        background-color: rgb(116, 152, 231);
+        margin-left: 70vh;
+        margin-bottom: 2%;
+        padding: 20px 1px 140px 20px;
+        border-radius: 2vh;
     }
 
     p:nth-child(1) {
@@ -76,7 +138,18 @@ p.forminput {
     }
 
     .submitBtn {
-        margin-left: 0;
-        width: 100%;
+        align-content: center;
+        border-radius: 2vh;
+        height: 10%;
+        margin-top: 5%;
+        margin-left: 0%;
+        margin-bottom: -80%;
+        width: 95%;
+        z-index: 1;
+    }
+
+    .radioBtn {
+        font-size: 12px;
+        margin-left: 5%;
     }
 }
