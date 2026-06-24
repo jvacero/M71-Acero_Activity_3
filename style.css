@@ -4,6 +4,19 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.form_done {
+    font-size: 14px;
+    font-family: monospace;
+    border-radius: 2vh;
+    padding: 2% 2% 5% 2%;
+    margin: 2% 33% 0 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: rgb(116, 152, 231);
+}
+
 header {
     padding: 5px;
 }
@@ -76,6 +89,32 @@ p:nth-child(1) {
     font-family: 'Noto Sans';
     font-weight: bold;
     font-size: 180%;
+}
+
+.return:hover {
+    color: aliceblue;
+    background-color: greenyellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: transparent;
+    text-decoration: none;
+}
+
+.return {
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    width: 90%;
+    padding: 3%;
+    margin: 6% 10% -5% 5%;
+    border-radius: 1vmax;
+    border-style: none;
 }
 
 .submitBtn {
